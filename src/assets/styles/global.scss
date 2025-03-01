@@ -1,0 +1,64 @@
+@use './variables' as *;
+
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  background: $secondary-color;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Rubik', 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+  }
+
+  h4 {
+    margin: 0 0 25px;
+  }
+}
+
+.app-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+.app-paper {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.app-title {
+  margin-bottom: 20px;
+  color: $text-color;
+}
+
+.location-button {
+  margin-top: 10px;
+  background-color: $primary-color !important;
+  color: white !important;
+  &:hover {
+    
+  }
+}
+
+.loading-spinner {
+  margin-top: 15px;
+}
+
+.error-message {
+  margin-top: 10px;
+}
