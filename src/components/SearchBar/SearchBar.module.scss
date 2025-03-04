@@ -3,30 +3,27 @@
 .searchBar {
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 400px;
+  width: 100% !important;
+  max-width: none !important;
   position: relative;
+  margin-bottom: 14px;
 }
 
 .searchInput {
-  flex: 1;
-  height: 62px;
-
-  .MuiInputBase-root {
-    width: 100%;
-    border-radius: 62px !important;
-  }
+  flex-grow: 1;
+  width: 100%;
 }
 
 .searchButton {
-  margin-left: -62px;
   z-index: 2;
-  min-width: 62px;
-  height: 62px;
+  width: 56px;
+  min-width: 56px !important;
+  height: 56px;
   background-color: $primary-color !important;
   color: white !important;
-  border-radius: 62px !important;
+  border-radius: 56px !important;
   padding: 7px !important;
+  flex-shrink: 0;
 
   &:hover {
     background-color: $third-color !important;

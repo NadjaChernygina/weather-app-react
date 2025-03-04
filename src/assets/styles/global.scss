@@ -7,8 +7,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+  overflow-y: auto;
 }
 
 .app-container {
@@ -23,7 +24,7 @@ body {
   }
 
   h4 {
-    margin: 0 0 25px;
+    margin: 10px 0 25px;
   }
 }
 
@@ -50,6 +51,8 @@ body {
   margin-top: 10px;
   background-color: $primary-color !important;
   color: white !important;
+  border-radius: 50px !important;
+
   &:hover {
     
   }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search'; // 🔥 Імпортуємо іконку
+import SearchIcon from '@mui/icons-material/Search';
 import styles from './SearchBar.module.scss';
 
 interface SearchBarProps {
@@ -24,9 +24,18 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         className={styles.searchInput}
         value={city}
         onChange={(e) => setCity(e.target.value)}
+        sx={{
+          '& .MuiOutlinedInput-root': {
+            borderRadius: '60px',
+            marginRight: '8px',
+          },
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderRadius: '60px',
+          },
+        }}
       />
       <Button variant="contained" className={styles.searchButton} onClick={handleSearch}>
-        <SearchIcon /> {/* 🔥 Додаємо іконку замість тексту */}
+        <SearchIcon /> {}
       </Button>
     </div>
   );
