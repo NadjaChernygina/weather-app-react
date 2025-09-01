@@ -1,3 +1,8 @@
+>>>>>>> Initial commit
+
+npm run dev
+
+
 # weather-app
 
 
@@ -49,4 +54,4 @@ export default tseslint.config({
   },
 })
 ```
->>>>>>> Initial commit
+
